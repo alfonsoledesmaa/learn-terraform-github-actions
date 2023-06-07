@@ -12,6 +12,14 @@ terraform {
       version = "3.4.3"
     }
   }
+
+  cloud {
+    organization = "Alfonsoledesmaa"
+
+    workspaces {
+      name = "github-actions"
+    }
+  }
   required_version = ">= 1.1.0"
 }
 
