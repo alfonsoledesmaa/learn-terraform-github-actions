@@ -2,6 +2,15 @@
 # SPDX-License-Identifier: MPL-2.0
 
 terraform {
+  cloud {
+    organization = "Alfonsoledesmaa"
+    hostname = "app.terraform.io"
+
+    workspaces {
+      name = "github-actions"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
